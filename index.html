@@ -1,0 +1,806 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>JobRack - Jobs</title>
+        <meta name="author" content="Aleksandar Djordjevic">
+        <meta name="description" content="jobrack, jobs, it jobs, developer jobs, design jobs">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet" type="text/css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> 
+
+    <nav class="navbar" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/header_logo.png" alt="logo"/></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav"></ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">How it Works<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">For Employers</a></li>
+                  <li><a href="#">For Jobseekers</a></li> 
+                </ul>
+              </li>
+              <li><a href="#">Pricing</a></li> 
+              <li><a href="#">Blog</a></li> 
+              <li><a class="signup-btn" href="#">Sign Up</a></li>
+              <li><a class="login-btn" href="#">Login</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+     <section class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Find High Quality Eastern Europeen</h1>
+                        <h2 class="type-element"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <form class="form-inline">
+              <span class="find-pro-text">Find Professionals</span>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="pwd" placeholder="Create Password">
+              </div>
+              <button type="submit" class="btn">Post a Job</button>
+            </form>
+          </div>
+        </div> 
+      </div>
+     </section>
+
+  <section class="jobseekers-section">
+    <div class="container">
+      <h2 class="jobseekers-title text-center">Find jobseekers specializing in the following skills:</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <a href="#" class="thumbnail">
+            <img class="img-responsive" src="img/icon-01-normal.png" alt="Design & Multimedia" 
+            onmouseover="this.src='img/icon-01-hover.png'" onmouseout="this.src='img/icon-01-normal.png'">
+            <p class="text-center">Design & Multimedia</p>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <a href="#" class="thumbnail">
+            <img class="img-responsive" src="img/icon-02-normal.png" alt="Web Development"
+            onmouseover="this.src='img/icon-02-hover.png'" onmouseout="this.src='img/icon-02-normal.png'">
+            <p class="text-center">Web Development</p>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <a href="#" class="thumbnail">
+            <img class="img-responsive" src="img/icon-03-normal.png" alt="Software Development"
+            onmouseover="this.src='img/icon-03-hover.png'" onmouseout="this.src='img/icon-03-normal.png'">
+            <p class="text-center">Software Development</p>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <a href="#" class="thumbnail">
+            <img class="img-responsive" src="img/icon-04-normal.png" alt="Mobile Application"
+            onmouseover="this.src='img/icon-04-hover.png'" onmouseout="this.src='img/icon-04-normal.png'">
+            <p class="text-center">Mobile Application</p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <a href="#" class="thumbnail">
+            <img class="img-responsive" src="img/icon-05-normal.png" alt="Content Writing"
+            onmouseover="this.src='img/icon-05-hover.png'" onmouseout="this.src='img/icon-05-normal.png'">
+            <p class="text-center">Content Writing</p>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <a href="#" class="thumbnail">
+            <img class="img-responsive" src="img/icon-06-normal.png" alt="Admin support & Customer service"
+            onmouseover="this.src='img/icon-06-hover.png'" onmouseout="this.src='img/icon-06-normal.png'">
+            <p class="text-center">Admin support & <br> Customer service</p>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <a href="#" class="thumbnail">
+            <img class="img-responsive" src="img/icon-07-normal.png" alt="Sales & Marketing"
+            onmouseover="this.src='img/icon-07-hover.png'" onmouseout="this.src='img/icon-07-normal.png'">
+            <p class="text-center">Sales & Marketing</p>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <a href="#" class="thumbnail">
+            <img class="img-responsive" src="img/icon-08-normal.png" alt="Business & Finance Management"
+            onmouseover="this.src='img/icon-08-hover.png'" onmouseout="this.src='img/icon-08-normal.png'">
+            <p class="text-center">Business & Finance <br> Management</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-process-section">
+    <div class="container">
+      <div class="divider">
+        <hr class="left"/><span class="our-process-title text-center">Our Process Explained:</span><hr class="right" />
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <a href="#" class="thumbnail text-center">
+            <img class="img-responsive" src="img/img-01-signup.png" alt="Signup">
+            <h2>Step 1</h2>
+            <p>Sign up with us and <br> make a job post</p>
+            <button type="submit" class="btn">Learn more</button>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <a href="#" class="thumbnail text-center">
+            <img class="img-responsive" src="img/img-02-search.png" alt="Search">
+            <h2>Step 2</h2>
+            <p>Search through our <br> database for prospects</p>
+            <button type="submit" class="btn">Learn more</button>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <a href="#" class="thumbnail text-center">
+            <img class="img-responsive" src="img/img-03-post.png" alt="Advertise">
+            <h2>Step 3</h2>
+            <p>We advertize on paid social media <br> to find your star candidate</p>
+            <button type="submit" class="btn">Learn more</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="why-outsource">    
+      <div class="container">
+        <div class="row">
+          <h2>Why Outsource to Eastern Europe with JobRack?</h2>
+          <div class="col-md-offset-2 col-lg-12 text-center">
+              <ul class="outsource-list">
+                <li><div class="checkmark-icon"></div><p>High speed internet connection</p></li>
+                <li><div class="checkmark-icon"></div><p>Close proximity to USA and EU countries</p></li>
+                <li><div class="checkmark-icon"></div><p>We advertise your job with paid ads</p></li>
+                <li><div class="checkmark-icon"></div><p>No ongoing fees from us - pay directly to the employee</p></li>
+                <li><div class="checkmark-icon"></div><p>Hire Full or Part time, hourly, monthly or for fixed projects</p></li>
+              </ul>
+          </div>
+        </div>
+        <div class="row">
+              <div class="col-md-offset-2 col-lg-8 text-center">
+               <div class="signup-form">
+                <h4 class="signup-text">Sign up to for your next Eastern Europe hire</h4>
+                <form class="form-inline">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="pwd" placeholder="Create Password">
+                  </div>
+                  <button type="submit" class="btn">Post a Job</button>
+                </form>
+               </div>
+              </div>
+            </div>  
+        </div>
+    </section>
+
+    <section class="learn-more">    
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center">
+            <h2>JobRack for workers - How can JobRack help you?</h2>
+          </div>
+          <div class="col-lg-3 text-center">
+            <button type="submit" class="btn">Learn more</button>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+   <section class="section-3">
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 pull-right">
+          <div class="section-3-text">
+            <h2>We head-hunt</h2>
+            <p>We give you a headstart in hiring by spending <br>time and money to find you best possible <br>candidates fo your next hire!</p>
+           </div> 
+        </div>
+      </div>
+     </div>
+    </section>
+    
+    <section class="section-4">    
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <div class="section-4-text">
+            <h2>Reduce your cost</h2>
+            <p>Typically, American and European hires cost <br>between $75,000 and $150,000 a month. In <br>comparison, our jobseekers' average stated <br>salary requirement is $15,000 a month.</p>
+           </div> 
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="section-4-text">
+            <img class="img-responsive" src="img/save-money.png" align="Save money image">
+          </div>
+        </div>
+      </div>
+     </div> 
+    </section>
+        
+    <section class="section-5">    
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 pull-right">
+          <div class="section-5-text">
+            <h2>Skills you need</h2>
+            <p>Don't see you ideal jobseeker in our <br>database?</p>
+            <br>
+            <p>Contact us and we'll find one for you! We are <br>good like that.</p>
+          </div>
+        </div>
+      </div>
+     </div>    
+    </section>
+        
+    <section class="section-6">    
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+         <div class="section-6-text">
+            <h2>24-hour suport <br>turnaround</h2>
+            <p>We feel strongly about supporting our clients <br>- get in touch with us and we'll turn around <br>within 24 hours! We'll make your hiring is the <br>last thing you need to worry about to grow <br>your business.</p>
+         </div>
+        </div>
+         <div class="col-lg-6 col-md-6">
+          <div class="section-6-text">
+            <img class="img-responsive" src="img/support.png" align="Support">
+          </div>
+         </div>
+      </div>
+     </div>    
+    </section>
+
+    <section class="jobseekers-slider">
+      <div class="container">
+        <h2 class="jobseekers-slider-title text-center">Checkout some of our jobseekers</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="col-md-offset-3 col-md-6">
+                <div class="panel panel-default bootcards-file card-panel">
+                  <div class="list-group">
+                    <div class="list-group-item card-heading">
+                      <a href="#">
+                        <div class="card-avatar"></div>
+                      </a>
+                      <h4 class="list-group-item-heading">
+                        <a href="#">
+                          Aleksandar Djordjevic
+                        </a>
+                        <p class="list-group-item-text"><strong>Senior Web Developer</strong></p><p class="list-group-item-text location-text"><strong>Serbia, Full time</strong></p></h4>
+                    </div>
+                    <div class="list-group-item card-body">
+                      <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam nisi, volutpat sed eleifend quis, ullamcorper et libero. Fusce bibendum, odio sit amet aliquet aliquam.</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">
+                      <div class="btn-group">
+                        <button type="submit" class="btn">View profile</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-offset-3 col-md-6">
+                <div class="panel panel-default bootcards-file card-panel">
+                  <div class="list-group">
+                    <div class="list-group-item card-heading">
+                      <a href="#">
+                        <div class="card-avatar"></div>
+                      </a>
+                      <h4 class="list-group-item-heading">
+                        <a href="#">
+                          Janosz Pertrik
+                        </a>
+                        <p class="list-group-item-text"><strong>Junior Web Designer</strong></p><p class="list-group-item-text location-text"><strong>Czech  Republic, Part time</strong></p></h4>
+                    </div>
+                    <div class="list-group-item card-body">
+                      <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam nisi, volutpat sed eleifend quis, ullamcorper et libero. Fusce bibendum, odio sit amet aliquet aliquam.</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">
+                      <div class="btn-group">
+                        <button type="submit" class="btn">View profile</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-offset-3 col-md-6">
+                <div class="panel panel-default bootcards-file card-panel">
+                  <div class="list-group">
+                    <div class="list-group-item card-heading">
+                      <a href="#">
+                        <div class="card-avatar"></div>
+                      </a>
+                      <h4 class="list-group-item-heading">
+                        <a href="#">
+                          Petar Petrovic
+                        </a>
+                        <p class="list-group-item-text"><strong>Medior Web Designer</strong></p><p class="list-group-item-text location-text"><strong>Serbia, Part time</strong></p></h4>
+                    </div>
+                    <div class="list-group-item card-body">
+                      <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam nisi, volutpat sed eleifend quis, ullamcorper et libero. Fusce bibendum, odio sit amet aliquet aliquam.</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">
+                      <div class="btn-group">
+                        <button type="submit" class="btn">View profile</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-offset-3 col-md-6">
+                <div class="panel panel-default bootcards-file card-panel">
+                  <div class="list-group">
+                    <div class="list-group-item card-heading">
+                      <a href="#">
+                        <div class="card-avatar"></div>
+                      </a>
+                      <h4 class="list-group-item-heading">
+                        <a href="#">
+                          Ivo Janic
+                        </a>
+                        <p class="list-group-item-text"><strong>Senior Web Developer</strong></p><p class="list-group-item-text location-text"><strong>Croatia, Full time</strong></p></h4>
+                    </div>
+                    <div class="list-group-item card-body">
+                      <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam nisi, volutpat sed eleifend quis, ullamcorper et libero. Fusce bibendum, odio sit amet aliquet aliquam.</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">
+                      <div class="btn-group">
+                        <button type="submit" class="btn">View profile</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+        
+    <section class="learn-more">    
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center">
+            <h2>JobRack for workers - How can JobRack help you?</h2>
+          </div>
+          <div class="col-lg-3 text-center">
+            <button type="submit" class="btn">Learn more</button>
+          </div>
+        </div> 
+      </div>
+    </section>
+ 
+    <section class="section-8">    
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 pull-right">
+          <div class="section-8-text">
+            <h2>Weekly assistance <br>webinar</h2>
+            <p>As soon as you sign up, we will enroll you into <br>our weekly call where we'll wall you through <br>everything you need to know about using <br>JobRack.</p>
+          </div>
+        </div>
+      </div>
+     </div>
+    </section>
+        
+    <section class="section-9">    
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+         <div class="section-9-text">
+            <h2>We ensure you get paid</h2>
+            <p>One of the biggest worries jobseekers have is <br>whether or not they'll get paid.</p>
+            <br>
+            <p>We have processes in place to make sure we <br>work with your employer to help you get paid <br>for your work.</p>
+         </div>
+        </div>
+         <div class="col-lg-6 col-md-6">
+         <div class="section-9-text">
+            <img class="img-responsive" src="img/get-paid.png" align="Get Paid">
+         </div>
+        </div>
+      </div>
+     </div> 
+    </section>
+        
+    <section class="section-10">    
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 pull-right">
+         <div class="section-10-text">
+           <h2>New jobs straight <br>to your mail</h2>
+           <p>Once logged in, you can sign up to our <br>notifications and receive new jobs directly in <br>your inbox twice a day.</p>
+         </div>
+        </div> 
+      </div>
+     </div>
+    </section>
+        
+    <section class="section-11">    
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <div class="section-11-text">
+            <h2>We won't take any <br>money from you</h2>
+            <p>Unlike other platforms out there, we don't <br>intend to take any money from you! You keep <br>100% of what you make!</p>
+          </div>
+        </div> 
+        <div class="col-lg-6 col-md-6">          
+          <div class="section-11-text">
+            <img class="img-responsive" src="img/wont-take-away-money.png" align="Won't take money away">
+          </div>
+        </div> 
+      </div>
+     </div>
+    </section>
+    
+    <section class="jobseekers-slider">
+      <div class="container">
+        <h2 class="jobseekers-slider-title text-center">Checkout hot jobs right now</h2>
+        <div id="myCarousel-second" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel-second" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel-second" data-slide-to="1"></li>
+            <li data-target="#myCarousel-second" data-slide-to="2"></li>
+            <li data-target="#myCarousel-second" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="col-md-offset-3 col-md-6">
+                <div class="panel panel-default bootcards-file card-panel">
+                  <div class="list-group">
+                    <div class="list-group-item card-heading">
+                      <a href="#">
+                        <div class="card-avatar"></div>
+                      </a>
+                      <h4 class="list-group-item-heading">
+                        <a href="#">
+                          Senior Web Developer
+                        </a>
+                        <p class="list-group-item-text"><strong>Full Time</strong></p><p class="list-group-item-text location-text"><strong>Salary: 2200$</strong></p></h4>
+                    </div>
+                    <div class="list-group-item card-body">
+                      <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam nisi, volutpat sed eleifend quis, ullamcorper et libero. Fusce bibendum, odio sit amet aliquet aliquam.</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">
+                      <div class="btn-group">
+                        <button type="submit" class="btn">View job</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-offset-3 col-md-6">
+                <div class="panel panel-default bootcards-file card-panel">
+                  <div class="list-group">
+                    <div class="list-group-item card-heading">
+                      <a href="#">
+                        <div class="card-avatar"></div>
+                      </a>
+                      <h4 class="list-group-item-heading">
+                        <a href="#">
+                          Senior Web Designer
+                        </a>
+                        <p class="list-group-item-text"><strong>Part Time</strong></p><p class="list-group-item-text location-text"><strong>Salary: 1000$</strong></p></h4>
+                    </div>
+                    <div class="list-group-item card-body">
+                      <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam nisi, volutpat sed eleifend quis, ullamcorper et libero. Fusce bibendum, odio sit amet aliquet aliquam.</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">
+                      <div class="btn-group">
+                        <button type="submit" class="btn">View job</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-offset-3 col-md-6">
+                <div class="panel panel-default bootcards-file card-panel">
+                  <div class="list-group">
+                    <div class="list-group-item card-heading">
+                      <a href="#">
+                        <div class="card-avatar"></div>
+                      </a>
+                      <h4 class="list-group-item-heading">
+                        <a href="#">
+                           Senior Web Designer
+                        </a>
+                        <p class="list-group-item-text"><strong>Full Time</strong></p><p class="list-group-item-text location-text"><strong>Salary: 2500$</strong></p></h4>
+                    </div>
+                    <div class="list-group-item card-body">
+                      <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam nisi, volutpat sed eleifend quis, ullamcorper et libero. Fusce bibendum, odio sit amet aliquet aliquam.</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">
+                      <div class="btn-group">
+                        <button type="submit" class="btn">View job</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-offset-3 col-md-6">
+                <div class="panel panel-default bootcards-file card-panel">
+                  <div class="list-group">
+                    <div class="list-group-item card-heading">
+                      <a href="#">
+                        <div class="card-avatar"></div>
+                      </a>
+                      <h4 class="list-group-item-heading">
+                        <a href="#">
+                          Medior Web Developer
+                        </a>
+                        <p class="list-group-item-text"><strong>Full Time</strong></p><p class="list-group-item-text location-text"><strong>Salary: 1500$</strong></p></h4>
+                    </div>
+                    <div class="list-group-item card-body">
+                      <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam nisi, volutpat sed eleifend quis, ullamcorper et libero. Fusce bibendum, odio sit amet aliquet aliquam.</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">
+                      <div class="btn-group">
+                        <button type="submit" class="btn">View job</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel-second" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel-second" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients-say">    
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Look what our clients are saying about us...</h2>
+            <div class="row">
+              <div class="col-md-offset-2 col-lg-8 text-center">
+                <div class="client-area first-client">
+                  <div class="row">
+                    <div class="col-lg-4 left-panel">
+                      <img src="img/logopic1.png" class="image-responsive" alt="Bobsled">
+                    </div>
+                    <div class="col-lg-8 right-panel">
+                      <p>"I definitely recommend jobrack.eu to my <br>friends because I love the fact that <br>you go out and find qualified new applicants for <br>me. I have hired 3 people from jobrack <br>and found it to be incredibly useful in helping to <br>grow my agency with the right people."
+                      </p>
+                      <hr>
+                      <p>KIRI MASTERS</p>
+                      <p>BOBSLED MARKETING</p>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-offset-2 col-lg-8 text-center">
+                <div class="client-area second-client">
+                  <div class="row">
+                    <div class="col-lg-8 left-panel">
+                      <p>"JobRack is very easy to use and we got a flood <br>of good candidates very quickly."
+                      </p>
+                      <hr>
+                      <p>BEN</p>
+                      <p>BEANNINJAS.COM</p>
+                    </div>
+                    <div class="col-lg-4 right-panel">
+                      <img src="img/logopic2.png" class="image-responsive" alt="Bean Ninjas">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-offset-2 col-lg-8 text-center">
+                <div class="client-area third-client">
+                  <div class="row">
+                    <div class="col-lg-4 left-panel">
+                      <img src="img/logopic3.png" class="image-responsive" alt="Mindojo">
+                    </div>
+                    <div class="col-lg-8 right-panel">
+                      <p>"JobRack is the only Estern European <br>freelancer site avaible"
+                      </p>
+                      <hr>
+                      <p>HOLLIE SIMONE</p>
+                      <p>MINDOJO.COM</p>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-offset-2 col-lg-8 text-center">
+                <div class="client-area forth-client">
+                  <div class="row">
+                    <div class="col-lg-8 left-panel">
+                      <p>"I had hired someone in the UK for 10 hours a <br>week, and was very dissatisfied. I put a job add on <br>JobRack and got 15 applications in 10 days. I <br>hired someone from Croatia to work full time for <br>$800/ month. He's amazing find - great <br>English, hard-working, very clever and <br>determined. I can thoroughly recommend <br>JobRack for you nex hire."
+                      </p>
+                      <hr>
+                      <p>JOHN AINSWORTH</p>
+                      <p>MAKESPORTFUN.COM</p>
+                    </div>
+                    <div class="col-lg-4 right-panel">
+                      <img src="img/logopic4.png" class="image-responsive" alt="Make Sport Fun">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+    </section>
+
+    <section class="get-started">    
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 text-center">
+            <h2>Get Started Now</h2>
+          </div>
+          <div class="col-lg-7 text-center">
+            <button type="submit" class="btn">I'm a Jobseeker</button>
+            <button type="submit" class="btn">I'm an Employer</button>
+          </div>
+        </div> 
+      </div>
+    </section>   
+
+    <footer>
+      <section class="footer-up">  
+       <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <ul>
+                <li><h4>FOR EMPLOYERS</h4></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Plans &amp; Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Affiliate Signup</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <ul>
+                <li><h4>FOR REMOTE WORKERS</h4></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Our Mediation Terms</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <ul>
+                <li><h4>HELP</h4></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <ul>
+                <li><h4>CONNECT WITH US</h4></li>
+                <li><a href="#"><img src="img/facebook-logo.png" alt="Facebook logo"></a>
+                    <a href="#"><img src="img/twitter-logo.png" alt="Twitter logo"></a>
+                    <a href="#"><img src="img/linkedin-logo.png" alt="LinkedIn logo"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+         </div>
+        </div>
+      </section>
+      <section class="footer-down">
+        <div class="container">
+           <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <img src="img/logo-white.png" alt="Footer Logo">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <p class="text-content"><a href="http://kvsocial.com/home/">Powered by KV Social</a></p>
+            </div>
+           </div>
+        </div>
+      </section>  
+    </footer>
+        
+   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+   <script src="js/vendor/bootstrap.min.js"></script>
+   <script src="js/bootcards.min.js"></script>
+   <script src="js/typed.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+   /*THIS IS COMMENTED OUT BECAUSE I WANTED TO SHOW IT AS A GOOGLE ANALYTICS FUNCTION WHICH NEEDS TO BE ADDED ON A LIVE WEBSITE ONLY*/
+            /*(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');*/
+   </script>
+  </body>
+</html>
